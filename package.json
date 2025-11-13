@@ -6,7 +6,6 @@
   "scripts": {
     "start": "live-server --port=3000 --host=localhost",
     "dev": "live-server --port=3000 --host=localhost --open=/index.html",
-    "build": "echo 'No build step required for static site'",
     "test": "echo 'No tests specified'",
     "deploy": "echo 'Push to GitHub to auto-deploy via Netlify/Vercel/GitHub Pages'"
   },
