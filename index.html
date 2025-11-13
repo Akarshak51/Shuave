@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shuave - Premium design and development services. Transform your vision into stunning digital experiences.">
+    <meta name="keywords" content="web design, web development, UI/UX, branding, digital agency">
+    <meta name="author" content="Shuave">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shuave.com/">
+    <meta property="og:title" content="Shuave - Premium Design & Development">
+    <meta property="og:description" content="Transform your vision into stunning digital experiences">
+    <meta property="og:image" content="https://shuave.com/assets/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shuave - Premium Design & Development">
+    <meta name="twitter:description" content="Transform your vision into stunning digital experiences">
+    <meta name="twitter:image" content="https://shuave.com/assets/images/og-image.jpg">
+    
+    <title>Shuave - Premium Design & Development Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="assets/icons/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <svg width="120" height="40" viewBox="0 0 120 40">
+                        <text x="10" y="30" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="currentColor">Shuave</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                Transform Your Vision Into
+                <span class="gradient-text">Stunning Digital Experiences</span>
+            </h1>
+            <p class="hero-subtitle">
+                Premium design and development services that elevate your brand and captivate your audience
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions to bring your ideas to life</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8"/>
+                            <path d="M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, user-centric designs that convert visitors into customers</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Robust, scalable applications built with cutting-edge technologies</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Distinctive brand identities that make lasting impressions</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 3v4"/>
+                            <path d="M8 3v4"/>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive interfaces that delight users and drive engagement</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2"/>
+                            <path d="M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile experiences</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>E-Commerce</h3>
+                    <p>Complete online stores that maximize sales and conversions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">A proven methodology for exceptional results</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Discovery</h3>
+                    <p>We dive deep into understanding your business, goals, and target audience</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Strategy</h3>
+                    <p>We develop a comprehensive plan tailored to your unique needs</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Design</h3>
+                    <p>We create stunning visuals that align with your brand identity</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Development</h3>
+                    <p>We build robust solutions using the latest technologies</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3>Launch</h3>
+                    <p>We deploy your project and ensure everything runs smoothly</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <h3>Support</h3>
+                    <p>We provide ongoing maintenance and optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Showcasing our best projects</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/project-1.jpg" alt="Project 1" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Website</h3>
+                            <p>Web Design & Development</p>
+                            <a href="https://github.com/Akarshak51/problem-finder-app.git" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/project-2.jpg" alt="Project 2" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>AI Agent</h3>
+                            <p>Full Stack Development</p>
+                            <a href="https://github.com/Akarshak51/AI-Agent-P.git" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/project-3.jpg" alt="Project 3" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Object YOLO-Object-Detection-Voice App</h3>
+                            <p>Mobile App Design</p>
+                            <a href="https://github.com/Akarshak51/YOLO-Object-Detection-Voice.git" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/project-4.jpg" alt="Project 4" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Instagram Automation</h3>
+                            <p>Branding & Identity</p>
+                            <a href="https://github.com/Akarshak51/instagram-automation.git" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Client Feedback</span>
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">What our clients say about us</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Shuave transformed our online presence completely. Their attention to detail and creative approach exceeded our expectations."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Venktesh Reddy</strong>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Professional, creative, and incredibly talented. They delivered our e-commerce platform ahead of schedule with exceptional quality."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Avesh Das</strong>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Working with Shuave was a game-changer for our brand. They truly understood our vision and brought it to life beautifully."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Vartika</strong>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>shuave114@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>India</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Shuave</h3>
+                    <p>Transforming visions into digital reality</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and insights</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shuave. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/three-scene.js" type="module"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
