@@ -1,0 +1,49 @@
+{
+  "name": "shuave-website",
+  "version": "1.0.0",
+  "description": "Premium design and development agency website with Three.js integration",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost",
+    "dev": "live-server --port=3000 --host=localhost --open=/index.html",
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'No tests specified'",
+    "deploy": "echo 'Push to GitHub to auto-deploy via Netlify/Vercel/GitHub Pages'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/shuave-website.git"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "agency",
+    "three.js",
+    "design",
+    "development",
+    "web-design",
+    "web-development"
+  ],
+  "author": "Shuave",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/shuave-website/issues"
+  },
+  "homepage": "https://www.shuave.com",
+  "dependencies": {
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
